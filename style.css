@@ -1,3 +1,52 @@
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;   /* Stack image and text vertically */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;   /* Stack nav links vertically */
+    gap: 15px;
+  }
+
+  section {
+    margin: 30px 15px;        /* Reduce margins */
+    padding: 20px;
+  }
+
+  .project-card {
+    max-width: 100%;          /* Full width on mobile */
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr; /* One skill per row */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  section p {
+    font-size: 1em;
+  }
+}
 /* ===== Reset ===== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
