@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanmitha Portfolio</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <img src="photo.jpeg" alt="Shanmitha" class="profile-pic">
+    <div class="header-text">
+      <h1>ALLAMPALLI SHANMITHA</h1>
+      <p>Aspiring Data Analyst & Tech Innovator</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== About Section ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Allampalli Shanmitha, a Computer Science student skilled in C, Java, Data Structures, Python, HTML, CSS, and JavaScript. I’m passionate about building web applications and exploring data to uncover insights.</p>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>C Programming</li>
+      <li>Java</li>
+      <li>Data Structures</li>
+      <li>Python</li>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Data Analysis (Pandas, NumPy)</li>
+    </ul>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3 onclick="toggleDetails(this)">Portfolio Website</h3>
+      <p>Designed and developed a personal portfolio using HTML, CSS, and JavaScript.</p>
+      <div class="details">
+        <p>Features: Responsive design, modern layout, gradient backgrounds, and interactive hover effects.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <h3 onclick="toggleDetails(this)">Student Management System (Java)</h3>
+      <p>Console-based application implementing CRUD operations.</p>
+      <div class="details">
+        <p>Features: Create, Read, Update, Delete student records. Applied Data Structures for efficient handling.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <h3 onclick="toggleDetails(this)">To‑Do List Application</h3>
+      <p>Web-based To‑Do List using HTML, CSS, and JavaScript.</p>
+      <div class="details">
+        <p>Features: Add, edit, delete tasks with DOM manipulation. Clean UI design with interactive elements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Certificates Section ===== -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li>🎓 UI/UX Workshop</li>
+      <li>💻 Hackathon Participation</li>
+      <li>⚡ Participated in Data Analysis Workshop </li>
+      <li>🎓 Participated in Vibe Coding Competition </li>
+    </ul>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <footer>
+      <a href="mailto:allampalli.shanmitha@example.com">📧 Email Me</a>
+      <a href="https://linkedin.com/in/alampallishanmita" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/alampallyshanmitha-gif" target="_blank">💻 GitHub</a>
+    </footer>
+  </section>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    function toggleDetails(heading) {
+      const card = heading.parentElement;
+      card.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
