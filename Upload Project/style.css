@@ -1,0 +1,199 @@
+/* ===== GLOBAL ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f8f5;
+  color: #2f3a2f;
+}
+
+/* ===== NAVBAR ===== */
+
+.custom-nav {
+  background: #1f2d24;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #e8f5e9 !important;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d9f2e6, #fefae0);
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.hero h1 {
+  color: #1f2d24;
+}
+
+.hero p {
+  color: #3e4e3e;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== HERO BUTTONS FIX ===== */
+
+.hero .btn {
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 18px;
+}
+
+/* Explore Cakes button */
+.hero .btn-light {
+  background: #355a42;
+  color: #fff;
+  border: none;
+}
+
+.hero .btn-light:hover {
+  background: #2b4634;
+}
+
+/* Order Now button */
+.hero .btn-outline-light {
+  border: 2px solid #355a42;
+  color: #355a42;
+}
+
+.hero .btn-outline-light:hover {
+  background: #355a42;
+  color: #fff;
+}
+
+/* ===== CAKE CARDS ===== */
+
+.cake-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e6eee6;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.cake-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* FIX IMAGE (NO CROPPING) */
+.cake-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+}
+
+/* ===== ABOUT ===== */
+
+.about-section {
+  background: linear-gradient(135deg, #2f4f3f, #4c7a5a);
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+/* ===== ORDER ===== */
+
+.order-section {
+  background: linear-gradient(135deg, #e6f4ea, #fefae0);
+  padding-top: 60px;
+}
+
+.order-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ===== PREVIEW IMAGE ===== */
+
+.preview-img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* ===== TOTAL BOX ===== */
+
+.total-box {
+  background: #f1f6f1;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #2f3a2f;
+}
+
+/* ===== ORDER BUTTON ===== */
+
+.order-btn {
+  background: #4c7a5a;
+  color: black;
+  border: none;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #355a42;
+  transform: scale(1.05);
+}
+
+/* ===== CONTACT ===== */
+
+.contact-section {
+  background: #1f2d24;
+  color: #e8f5e9;
+  padding: 50px 0;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  background: #0f1511;
+  color: #cfd8cf;
+  padding: 10px 0;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
