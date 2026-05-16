@@ -1,0 +1,24 @@
+{
+  "name": "codsoft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alampallyshanmitha-gif/CodSoft.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alampallyshanmitha-gif/CodSoft/issues"
+  },
+  "homepage": "https://github.com/alampallyshanmitha-gif/CodSoft#readme",
+  "dependencies": {
+    "mongodb": "^7.2.0"
+  }
+}
