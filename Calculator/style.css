@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgb(174, 168, 168);
+    padding:15px;
+}
+
+.calculator{
+    width:420px;
+    max-width:100%;
+    padding:20px;
+    border-radius:40px;
+    background:linear-gradient(135deg,#0097a7,#2d1365);
+    box-shadow:0 0 25px rgba(255,255,255,0.15);
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.circle{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:18px;
+}
+
+.display{
+    width:100%;
+    min-height:100px;
+    color:white;
+    font-size:60px;
+    text-align:right;
+    padding:10px 5px;
+    overflow-x:auto;
+    margin-bottom:10px;
+}
+
+.rad{
+    color:white;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+/* PERFECT BUTTON ALIGNMENT */
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:10px;
+    width:100%;
+}
+
+button{
+    width:100%;
+    aspect-ratio:1/1;
+    border:none;
+    border-radius:18px;
+    background:rgba(255,255,255,0.12);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.2s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+.green{
+    background:#66d100;
+    color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:450px){
+
+    .calculator{
+        padding:15px;
+        border-radius:30px;
+    }
+
+    button{
+        width:55px;
+        height:55px;
+        font-size:16px;
+        border-radius:16px;
+    }
+
+    .display{
+        font-size:42px;
+        min-height:80px;
+    }
+
+    .rad{
+        font-size:20px;
+    }
+
+    .circle{
+        width:42px;
+        height:42px;
+        font-size:15px;
+    }
+}
