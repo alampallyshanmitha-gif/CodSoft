@@ -1,6 +1,14 @@
-import { Query, QueryOperators, BasicValueQuery, ArrayValueQuery, ValueQuery, NestedQuery, ShapeQuery, Options, createQueryTester, EqualsOperation, createQueryOperation, createEqualsOperation, createOperationTester } from "./core";
-declare const createDefaultQueryOperation: <TItem, TSchema extends TItem = TItem>(query: Query<TSchema>, ownerQuery: any, { compare, operations }?: Partial<Options>) => import("./core").QueryOperation<unknown>;
-declare const createDefaultQueryTester: <TItem, TSchema extends TItem = TItem>(query: Query<TSchema>, options?: Partial<Options>) => (item: unknown, key?: import("./utils").Key, owner?: any) => boolean;
-export { Query, QueryOperators, BasicValueQuery, ArrayValueQuery, ValueQuery, NestedQuery, ShapeQuery, EqualsOperation, createQueryTester, createOperationTester, createDefaultQueryOperation, createEqualsOperation, createQueryOperation, };
-export * from "./operations";
-export default createDefaultQueryTester;
+import getSideChannelList from 'side-channel-list';
+import getSideChannelMap from 'side-channel-map';
+import getSideChannelWeakMap from 'side-channel-weakmap';
+
+declare namespace getSideChannel {
+	type Channel<K, V> =
+		| getSideChannelList.Channel<K, V>
+		| ReturnType<Exclude<typeof getSideChannelMap<K, V>, false>>
+		| ReturnType<Exclude<typeof getSideChannelWeakMap<K, V>, false>>;
+}
+
+declare function getSideChannel<K, V>(): getSideChannel.Channel<K, V>;
+
+export = getSideChannel;
